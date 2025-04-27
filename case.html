@@ -1,0 +1,1480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GPU List with Popups</title>
+    <link rel="stylesheet" href="gpu-list.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title-container">
+            <a href="index.html"><img src="comp-logo.jpg" alt="Company Logo" class="logo"></a>
+            <h1>Nexus Components</h1>
+        </div>
+        <div class="favorite-container">
+            <div class="favorite-icon" id="favorite-icon">
+                ♡
+                <span class="favorite-count">0</span>
+            </div>
+            <div class="favorite-dropdown" id="favorite-dropdown">
+                <div class="favorite-items-container">
+                    <h3>Your Favorites</h3>
+                    <div class="favorite-items-list" id="favorite-items-list">
+                        <p class="empty-favorite-message">Your favorites list is empty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-icon" id="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <div class="cart-items-container">
+                    <h3>Your Cart</h3>
+                    <div class="cart-items-list" id="cart-items-list">
+                        <p class="empty-cart-message">Your cart is empty</p>
+                    </div>
+                    <div class="cart-total">
+                        <span>Total: RM</span>
+                        <span id="cart-total-price">0.00</span>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="pc-parts-nav">
+        <ul>
+          <li><a href="cpu.html"><img src="images-nav/cpu.avif" alt="Processor">PROCESSORS</a></li>
+          <li><a href="gpu-list.html"><img src="images-nav/Graphic_card.avif" alt="GRAPHICS CARD">GRAPHIC CARDS</a></li>
+          <li><a href="motherboard.html"><img src="images-nav/mobo.avif" alt="Motherboard">MOTHERBOARDS</a></li>
+          <li><a href="ram.html"><img src="images-nav/RAM_v5.avif" alt="RAM">RAM</a></li>
+          <li><a href="psu.html"><img src="images-nav/RGB_Power_Supply.avif" alt="PSU">POWER SUPPLY UNIT</a></li>
+          <li><a href="case.html"><img src="images-nav/PC_casing.avif" alt="Case">PC CASING</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="gpu-list">
+            <ul>
+                <li data-badge="BEST SELLER">
+                    <a href="#popup-gamdias-talos">
+                        <div class="gpu-image-container"><img src="images-case/1.webp" alt="GAMDIAS"></div>
+                        <div class="gpu-content"><h2>GAMDIAS Talos E3 MESH Tempered Glass Mid Tower (ATX) Gaming PC Casing | Included 3x 120mm ARGB Case Fans</h2></div>
+                        <div class="gpu-price">RM179.00</div>
+                    </a>
+                </li>
+                
+                <li>
+                    <a href="#popup-slev-glazing">
+                        <div class="gpu-image-container"><img src="images-case/2.webp" alt="SLEV"></div>
+                        <div class="gpu-content"><h2>SLEVCASE Glazing Fantasy Micro ATX (mATX) Gaming PC Casing Black / White | Included 6x aRGB 120mm Fans</h2></div>
+                        <div class="gpu-price">RM219.00</div>
+                    </a>
+                </li>
+                
+                <li data-badge="BEST REVIEW">
+                    <a href="#popup-gamdias-aura">
+                        <div class="gpu-image-container"><img src="images-case/3.webp" alt="GAMDIAS"></div>
+                        <div class="gpu-content"><h2>GAMDIAS AURA GC2 Perforated ARGB Tempered Glass Mid Tower (ATX) Gaming PC Casing | Included 4x 120mm ARGB Case Fans</h2></div>
+                        <div class="gpu-price">RM179.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-techware-vx">
+                        <div class="gpu-image-container"><img src="images-case/4.webp" alt="TECHWARE"></div>
+                        <div class="gpu-content"><h2>TECWARE VX TRINITY M Black / White Micro ATX (mATX) Gaming PC Case</h2></div>
+                        <div class="gpu-price">RM279.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-techware-infinity">
+                        <div class="gpu-image-container"><img src="images-case/5.webp" alt="GIGABYTE"></div>
+                        <div class="gpu-content"><h2>TECWARE INFINITY M Black Micro ATX (mATX) Gaming PC Case</h2></div>
+                        <div class="gpu-price">RM239.00</div>
+                    </a>
+                </li>
+
+                <li data-badge="BEST RATING">
+                    <a href="#popup-techware-arc">
+                        <div class="gpu-image-container"><img src="images-case/6.webp" alt="TECHWARE"></div>
+                        <div class="gpu-content"><h2>TECWARE ARC M Digital Display Black / White Micro ATX (mATX) Gaming PC Case</h2></div>
+                        <div class="gpu-price">RM229.00</div>
+                    </a>
+
+                 <li>
+                    <a href="#popup-asus-a21">
+                        <div class="gpu-image-container"><img src="images-case/7.webp" alt="ASUS"></div>
+                        <div class="gpu-content"><h2>ASUS A21 Tempered Glass Side Panel Micro ATX (mATX) Gaming PC Casing | No Case Fans Included</h2></div>
+                        <div class="gpu-price">RM329.00</div>
+                    </a>
+                 </li>
+
+                 <li>
+                    <a href="#popup-techware-neo">
+                        <div class="gpu-image-container"><img src="images-case/8.webp" alt="ASUS"></div>
+                        <div class="gpu-content"><h2>TECWARE NEO M2 Tempered Glass Micro ATX (mATX) Gaming PC Casing | Included 3x ARGB Case Fans</h2></div>
+                        <div class="gpu-price">RM169.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-asustuf-gt301">
+                        <div class="gpu-image-container"><img src="images-case/9.webp" alt="ACER"></div>
+                        <div class="gpu-content"><h2>ASUS TUF Gaming GT301 Tempered Glass Micro ATX (mATX) Gaming PC Casing | Included 3x ARGB Case Fans + 1x Non-ARGB Fans</h2></div>
+                        <div class="gpu-price">RM339.00</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+    
+    <div id="popup-gamdias-talos" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/1.webp" alt="GAMDIAS">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">GAMDIAS Talos E3 MESH Tempered Glass Mid Tower (ATX) Gaming PC Casing</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM179.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MODEL:</span>
+                        <span class="spec-value">TALOS E3 MESH (BLACK / WHITE)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CASE TYPE:</span>
+                        <span class="spec-value">Mid Tower</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MB SUPPORT:</span>
+                        <span class="spec-value">ATX, Micro-ATX, Mini-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SYNC:</span>
+                        <span class="spec-value">5V 3-Pin Addressable Header</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">COLOR:</span>
+                        <span class="spec-value">BLACK / WHITE</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">EXPANSION SLOT:</span>
+                        <span class="spec-value">7 Sots</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MATERIAL:</span>
+                        <span class="spec-value">SPCC & ABS & Tempered Glass</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RAD SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TOP:</span>
+                        <span class="spec-value">240mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FRONT:</span>
+                        <span class="spec-value">360mm HDD is removable to support 360 AlO in front //280mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">REAR:</span>
+                        <span class="spec-value">120MM</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FAN SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TOP:</span>
+                        <span class="spec-value">2x120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FRONT:</span>
+                        <span class="spec-value">2x120mm/2x140mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">REAR:</span>
+                        <span class="spec-value">1x120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">BOTTOM:</span>
+                        <span class="spec-value">2x120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PRE-INSTALLED FAN:</span>
+                        <span class="spec-value">3x120mm ARGB (FRONT & REAR)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DRIVE BAYS:</span>
+                        <span class="spec-value">2x 3.5" // 2x 2.5"</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">I/O Ports:</span>
+                        <span class="spec-value">USB 3.0 x1, USB 2.0 x2, HD Audio x1, Fan LED Control x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU cooler height limitation:</span>
+                        <span class="spec-value">160mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">VGA length limitation:</span>
+                        <span class="spec-value">300mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PSU length limitation:</span>
+                        <span class="spec-value">150mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">363 x 210 x 447 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">WEIGHT:</span>
+                        <span class="spec-value">4.72KG</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="popup-slev-glazing" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/2.webp" alt="SLEV">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">SLEVCASE Glazing Fantasy Micro ATX (mATX) Gaming PC Casing Black / White</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM219.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MOTHERBOARD SUPPORT:</span>
+                        <span class="spec-value">M-ATX, ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX GPU:</span>
+                        <span class="spec-value">400mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU COOLER HEIGHT:</span>
+                        <span class="spec-value">165mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PCIe SLOT:</span>
+                        <span class="spec-value">4</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FAN SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Top:</span>
+                        <span class="spec-value">3 x 120mm or 2 x 140mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Front:</span>
+                        <span class="spec-value">2 x 120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Bottom:</span>
+                        <span class="spec-value">3 x 120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">1 x 120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Top:</span>
+                        <span class="spec-value">120mm, 240mm, 280mm, 360mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Top:</span>
+                        <span class="spec-value">120mm, 240mm, 280mm, 360mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FRONT I/O:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB3.0:</span>
+                        <span class="spec-value">(1x) USB3.0</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB2.0:</span>
+                        <span class="spec-value">(2x) USB2.0</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">HD Audio:</span>
+                        <span class="spec-value">(1x) HD Audio</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DRIVE BAY:</span>
+                        <span class="spec-value">(2x) 2.5" // (1x) 3.5"</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">400 x 210 x 425 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">WEIGHT:</span>
+                        <span class="spec-value">5.4KG</span>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-gamdias-aura" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/3.webp" alt="GAMDIAS">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">GAMDIAS AURA GC2 Perforated ARGB Tempered Glass Mid Tower (ATX) Gaming PC Casing</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM179.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MODEL:</span>
+                        <span class="spec-value">AURA GC2</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CASE TYPE:</span>
+                        <span class="spec-value">Mid Tower</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MB SUPPORT:</span>
+                        <span class="spec-value">ATX, Micro-ATX, Mini-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SYNC:</span>
+                        <span class="spec-value">5V 3-Pin Addressable Header</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">COLOR:</span>
+                        <span class="spec-value">BLACK</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">EXPANSION SLOT:</span>
+                        <span class="spec-value">7 Sots</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MATERIAL:</span>
+                        <span class="spec-value">SPCC & ABS & Tempered Glass</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RAD SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Front:</span>
+                        <span class="spec-value">240mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FAN SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TOP:</span>
+                        <span class="spec-value">2x 120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FRONT:</span>
+                        <span class="spec-value">3x 120mm / 2x 140mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">REAR:</span>
+                        <span class="spec-value">1x 120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PRE-INSTALLED FAN:</span>
+                        <span class="spec-value">4x 120mm ARGB (FRONT & REAR)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DRIVE BAYS:</span>
+                        <span class="spec-value">2x 3.5" // 2x 2.5"</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">I/O Ports:</span>
+                        <span class="spec-value">USB 3.0 x1, USB 2.0 x2, HD Audio x1, Fan LED Control x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU cooler height limitation:</span>
+                        <span class="spec-value">160mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">VGA length limitation:</span>
+                        <span class="spec-value">260mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PSU length limitation:</span>
+                        <span class="spec-value">150mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">352 x 200 x 442 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">WEIGHT:</span>
+                        <span class="spec-value">4.9KG</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-techware-vx" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/4.webp" alt="TECHWARE">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">TECWARE VX TRINITY M Black / White Micro ATX (mATX) Gaming PC Case</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM279.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MODEL NAME:</span>
+                        <span class="spec-value">VX TRINITY M</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CASE TYPE:</span>
+                        <span class="spec-value">Micro ATX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">418 x 280 x 375 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MATERIAL:</span>
+                        <span class="spec-value">Steel / Tempered Glass</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MOTHERBOARD SUPPORT:</span>
+                        <span class="spec-value">&nbsp;&nbsp;&nbsp;M-ATX / MINI-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">EXPANSION SLOT & STORAGE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SLOT:</span>
+                        <span class="spec-value">4</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">3.5' Drive Bay:</span>
+                        <span class="spec-value">2x Max</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">2.5' Drive Bay:</span>
+                        <span class="spec-value">3x Max</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TOP:</span>
+                        <span class="spec-value">Up To 360mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SIDE:</span>
+                        <span class="spec-value">Up To 240mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FAN SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Top:</span>
+                        <span class="spec-value">120mm x 3 (Max.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Side:</span>
+                        <span class="spec-value">120mm x 2 (Max.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Bottom:</span>
+                        <span class="spec-value">120mm x 3 (Max.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PRE-INSTALLED FAN:</span>
+                        <span class="spec-value">6x 120mm ARGB Fans</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">GPU LENGTH:</span>
+                        <span class="spec-value">400mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU COOLER HEIGHT:</span>
+                        <span class="spec-value">157mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">I/O PORTS:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB 3.0:</span>
+                        <span class="spec-value">x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB2.0:</span>
+                        <span class="spec-value">x2</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">HD Audio & Mic:</span>
+                        <span class="spec-value">x1</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-techware-infinity" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/5.webp" alt="TECHWARE">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">TECWARE INFINITY M Black Micro ATX (mATX) Gaming PC Case</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM239.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MODEL NAME:</span>
+                        <span class="spec-value">INFINITY M</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CASE TYPE:</span>
+                        <span class="spec-value">Micro ATX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">435 x 215 x 435 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MATERIAL:</span>
+                        <span class="spec-value">Steel / Tempered Glass</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MOTHERBOARD SUPPORT:</span>
+                        <span class="spec-value">M-ATX / MINI-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">EXPANSION SLOT & STORAGE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SLOT:</span>
+                        <span class="spec-value">4</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">3.5" Drive Bay:</span>
+                        <span class="spec-value">1x Max</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">2.5" Drive Bay:</span>
+                        <span class="spec-value">1x Max</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SIDE:</span>
+                        <span class="spec-value">Up To 240mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TOP:</span>
+                        <span class="spec-value">Up To 360mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FAN SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Side:</span>
+                        <span class="spec-value">120mm x 2 (Max.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Bottom:</span>
+                        <span class="spec-value">120mm x 2 (Max.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PRE-INSTALLED FAN:</span>
+                        <span class="spec-value">6x 120mm ARGB Fans</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">GPU LENGTH:</span>
+                        <span class="spec-value">420mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU COOLER HEIGHT:</span>
+                        <span class="spec-value">165mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">I/O PORTS:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB 3.0:</span>
+                        <span class="spec-value">x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB2.0:</span>
+                        <span class="spec-value">x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">HD Audio & Mic:</span>
+                        <span class="spec-value">x1</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-techware-arc" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/6.webp" alt="TECHWARE">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">TECWARE ARC M Digital Display Black / White Micro ATX (mATX) Gaming PC Case</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM229.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MODEL NAME:</span>
+                        <span class="spec-value">ARC M</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CASE TYPE:</span>
+                        <span class="spec-value">Micro ATX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">385 x 280 x 377 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MATERIAL:</span>
+                        <span class="spec-value">Steel / Tempered Glass</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MOTHERBOARD SUPPORT:</span>
+                        <span class="spec-value">M-ATX / MINI-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">EXPANSION SLOT & STORAGE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SLOT:</span>
+                        <span class="spec-value">4</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">3.5" Drive Bay:</span>
+                        <span class="spec-value">1x Max</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">2.5" Drive Bay:</span>
+                        <span class="spec-value">2x Max</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SIDE:</span>
+                        <span class="spec-value">Up To 240mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FAN SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Side:</span>
+                        <span class="spec-value">120mm x 2 (Max.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Bottom:</span>
+                        <span class="spec-value">120mm x 2 (Max.)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PRE-INSTALLED FAN:</span>
+                        <span class="spec-value">3x 120mm ARGB Fans</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">GPU LENGTH:</span>
+                        <span class="spec-value">330mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU COOLER HEIGHT:</span>
+                        <span class="spec-value">157mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">I/O PORTS:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB 3.0:</span>
+                        <span class="spec-value">x1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB2.0:</span>
+                        <span class="spec-value">x2</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">HD Audio & Mic：</span>
+                        <span class="spec-value">x1</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-asus-a21" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/7.jpg" alt="ASUS">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">ASUS A21 Tempered Glass Side Panel Micro ATX (mATX) Gaming PC Casing</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM329.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MODEL:</span>
+                        <span class="spec-value">ASUS A21 Case</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MOTHERBOARD SUPPORT:</span>
+                        <span class="spec-value">Micro-ATX // Mini-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DRIVE BAY:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">2.5" Bay:</span>
+                        <span class="spec-value">1 x 2.5" Bay</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Combo Bay:</span>
+                        <span class="spec-value">2 x 2.5"/3.5" Combo Bay</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">EXPANSION SLOT:</span>
+                        <span class="spec-value">5</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">FRONT I/O:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Audio:</span>
+                        <span class="spec-value">1 x Headphone<br>1 x Microphone</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB:</span>
+                        <span class="spec-value">2 x USB 3.2 Gen1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT (FRONT):</span>
+                        <span class="spec-value">120 mm // 140 mm // 240 mm // 280 mm // 360 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT (TOP):</span>
+                        <span class="spec-value">120 mm // 140 mm // 240 mm // 280 mm // 360 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT (REAR):</span>
+                        <span class="spec-value">120 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">COOLING SUPPORT (FRONT):</span>
+                        <span class="spec-value">3 x 120 mm // 2 x 140 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">COOLING SUPPORT (TOP):</span>
+                        <span class="spec-value">3 x 120 mm // 2 x 140 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">COOLING SUPPORT (REAR):</span>
+                        <span class="spec-value">1 x 120 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CPU COOLER HEIGHT:</span>
+                        <span class="spec-value">165 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX GPU LENGTH:</span>
+                        <span class="spec-value">380 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">220 x 430 x 465 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">WEIGHT:</span>
+                        <span class="spec-value">7.3KG</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-techware-neo" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/8.webp" alt="TECHWARE">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">TECWARE NEO M2 Tempered Glass Micro ATX (mATX) Gaming PC Casing</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM169.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">I/O:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB:</span>
+                        <span class="spec-value">Super Speed USB 3.0 x2</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Audio:</span>
+                        <span class="spec-value">HD Audio</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">BAYS:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">HDD/SSD:</span>
+                        <span class="spec-value">2x 3.5"/2.5" (Removable HDD Cage)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SSD:</span>
+                        <span class="spec-value">2x 2.5" (Removable SSD Tray)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Expansion:</span>
+                        <span class="spec-value">4x PCI Expansion Slots</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">FANS:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Front:</span>
+                        <span class="spec-value">2x 140mm (Included) or 2x 120mm (Optional)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">1x 120mm (Included)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Top:</span>
+                        <span class="spec-value">2x 120mm / 140mm</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">SUPPORT AND CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">GPU:</span>
+                        <span class="spec-value">330mm Max GPU Card</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU Cooler:</span>
+                        <span class="spec-value">175mm Max CPU Cooler</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">PSU:</span>
+                        <span class="spec-value">160mm Max PSU length</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Features:</span>
+                        <span class="spec-value">Cable Management Support</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Motherboard:</span>
+                        <span class="spec-value">mATX, ITX Motherboard</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Front:</span>
+                        <span class="spec-value">120 / 140 / 240 / 280mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Top:</span>
+                        <span class="spec-value">120 / 140 / 240mm</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSIONS:</span>
+                        <span class="spec-value">L 365mm × W 216mm × H 405mm</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-asustuf-gt301" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-case(popout)/9.webp" alt="ASUSTUF">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">ASUS TUF Gaming GT301 Tempered Glass Micro ATX (mATX) Gaming PC Casing</h1>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM339.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">MODEL NAME:</span>
+                        <span class="spec-value">TUF Gaming GT301</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CASE TYPE:</span>
+                        <span class="spec-value">MID Tower Chassis (ATX)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">DIMENSION:</span>
+                        <span class="spec-value">426 × 214 × 482 mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">WEIGHT:</span>
+                        <span class="spec-value">7.2Kg</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MATERIAL:</span>
+                        <span class="spec-value">Steel / tempered glass</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MOTHERBOARD SUPPORT:</span>
+                        <span class="spec-value">ATX / M-ATX / MINI-ITX</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">EXPANSION SLOT & STORAGE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">SLOT:</span>
+                        <span class="spec-value">7</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">2.5" Bay:</span>
+                        <span class="spec-value">4 x 2.5" Bay</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Combo Bay:</span>
+                        <span class="spec-value">2 x 2.5"/3.5" Combo Bay</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">RADIATOR SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Front:</span>
+                        <span class="spec-value">120mm, 140mm, 240mm, 280mm, 360mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">FAN SUPPORT:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Front:</span>
+                        <span class="spec-value">120mm × 3 or 140mm × 2</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Top:</span>
+                        <span class="spec-value">120mm × 2</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Rear:</span>
+                        <span class="spec-value">120mm × 1</span>
+                    </div>
+                    
+                    <div class="spec-item">
+                        <span class="spec-name">PRE-INSTALLED FAN:</span>
+                        <span class="spec-value">3 × 120mm ARGB<br>1 × 120mm</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CLEARANCE:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">GPU LENGTH:</span>
+                        <span class="spec-value">320mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CPU COOLER HEIGHT:</span>
+                        <span class="spec-value">160mm (Max)</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">I/O PORTS:</span>
+                        <span class="spec-value"></span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Audio:</span>
+                        <span class="spec-value">1 × Headphone<br>1 × Microphone</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">USB:</span>
+                        <span class="spec-value">2 × USB 3.1 Gen1</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">Controls:</span>
+                        <span class="spec-value">LED Control Button<br>Reset Button</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-palit-rtx5070infinity" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-gpu(popout)/10.png" alt="PALIT">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">PALIT GeForce RTX 5070 INFINITY 3 12GB GDDR7 Graphics Card</h1>
+                <div class="product-model">NE75070019K9-GB2050S</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM2899.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">GRAPHICS PROCESSING:</span>
+                        <span class="spec-value">Geforce RTX 5070</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORE CLOCK:</span>
+                        <span class="spec-value">Graphics Clock : Up to 2325 MHz <br>
+                                                 Boost clock : Up to 2512 MHz
+                        </span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CUDA CORES:</span>
+                        <span class="spec-value">6144</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MEMORY CLOCK:</span>
+                        <span class="spec-value">28 Gbps</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MEMORY SIZE:</span>
+                        <span class="spec-value">12GB GDDR6</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-pny-rtx5080triple" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-gpu(popout)/11.jpg" alt="PALIT">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">PNY GeForce RTX 5080 Triple Fan 16GB GDDR7 Graphics Card</h1>
+                <div class="product-model">VCG508016TFXPB1</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM6099.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">GRAPHICS PROCESSING:</span>
+                        <span class="spec-value">Geforce RTX 5080</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORE CLOCK:</span>
+                        <span class="spec-value">Base Clock : Up to 2.30 GHz <br>
+                                                 Boost Clock : Up to 2.78 GHz
+                        </span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CUDA CORES:</span>
+                        <span class="spec-value">10,752</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MEMORY CLOCK:</span>
+                        <span class="spec-value">30 Gbps</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MEMORY SIZE:</span>
+                        <span class="spec-value">16GB GDDR7</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-pny-rtx5080tripleOC" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="images-gpu(popout)/11.jpg" alt="PNY">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">PNY GeForce RTX 5080 Triple Fan OC 16GB GDDR7 Graphics Card</h1>
+                <div class="product-model">VCG508016TFXPB1-O</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM6299.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">GRAPHICS PROCESSING:</span>
+                        <span class="spec-value">Geforce RTX 5080</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORE CLOCK:</span>
+                        <span class="spec-value">Base Clock : Up to 2.30 GHz <br>
+                                                 Boost Clock : Up to 2.73 GHz
+                        </span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CUDA CORES:</span>
+                        <span class="spec-value">10,752</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MEMORY CLOCK:</span>
+                        <span class="spec-value">30 Gbps</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MEMORY SIZE:</span>
+                        <span class="spec-value">16GB GDDR7</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-sections">
+            <div class="footer-section">
+              <div class="footer-title">CUSTOMER CARE</div>
+              <ul class="footer-links">
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Warranty & Exchange</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <div class="footer-title">COMPANY</div>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <div class="footer-title">PAYMENT METHODS</div>
+              <div class="payment-methods">
+                <div class="payment-item">VISA</div>
+                <div class="payment-item">MASTERCARD</div>
+                <div class="payment-item">HONGLEONG BANK</div>
+                <div class="payment-item">HSBC BANK</div>
+                <div class="payment-item">RHB BANK</div>
+                <div class="payment-item">UOB BANK</div>
+                <div class="payment-item">PUBLIC BANK</div>
+                <div class="payment-item">FPX</div>
+                <div class="payment-item">GRAB PAY</div>
+                <div class="payment-item">TOUCH'NGO EWALLET</div>
+                <div class="payment-item">BANKISLAM</div>               
+              </div>
+            </div>
+          </div>
+          <div class="copyright">
+            &copy; 2023 Nexus Components. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+      
+    <script src="favorite.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html>

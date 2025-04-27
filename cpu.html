@@ -1,0 +1,844 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GPU List</title>
+    <link rel="stylesheet" href="gpu-list.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title-container">
+            <a href="index.html"><img src="comp-logo.jpg" alt="Company Logo" class="logo"></a>
+            <h1>Nexus Components</h1>
+        </div>
+        <div class="favorite-container">
+            <div class="favorite-icon" id="favorite-icon">
+                ♡
+                <span class="favorite-count">0</span>
+            </div>
+            <div class="favorite-dropdown" id="favorite-dropdown">
+                <div class="favorite-items-container">
+                    <h3>Your Favorites</h3>
+                    <div class="favorite-items-list" id="favorite-items-list">
+                        <p class="empty-favorite-message">Your favorites list is empty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-icon" id="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <div class="cart-items-container">
+                    <h3>Your Cart</h3>
+                    <div class="cart-items-list" id="cart-items-list">
+                        <p class="empty-cart-message">Your cart is empty</p>
+                    </div>
+                    <div class="cart-total">
+                        <span>Total: RM</span>
+                        <span id="cart-total-price">0.00</span>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="pc-parts-nav">
+        <ul>
+          <li><a href="cpu.html"><img src="images-nav/cpu.avif" alt="Processor">PROCESSORS</a></li>
+          <li><a href="gpu-list.html"><img src="images-nav/Graphic_card.avif" alt="GRAPHICS CARD">GRAPHIC CARDS</a></li>
+          <li><a href="motherboard.html"><img src="images-nav/mobo.avif" alt="Motherboard">MOTHERBOARDS</a></li>
+          <li><a href="ram.html"><img src="images-nav/RAM_v5.avif" alt="RAM">RAM</a></li>
+          <li><a href="psu.html"><img src="images-nav/RGB_Power_Supply.avif" alt="PSU">POWER SUPPLY UNIT</a></li>
+          <li><a href="case.html"><img src="images-nav/PC_casing.avif" alt="Case">PC CASING</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="gpu-list">
+            <ul>
+                <li data-badge="BEST SELLER"> 
+                    <a href="#popup-Intel-Core-i9-13900KS">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu1.png" alt="Intel" width="300" height="250"></div>
+                        <div class="gpu-content"><h2>Intel Core i9-13900KS<br>High-end flagship (24C/32T, up to 6.0GHz, 36MB cache)</h2></div>
+                        <div class="gpu-price">RM4200.00</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#popup-Intel-Core-i3-13100F">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu2.jpg" alt="Intel" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>Intel Core i3-13100F<br>Entry-level Raptor Lake (4C/8T, up to 4.5GHz, 12MB cache)</h2></div>
+                        <div class="gpu-price">RM550.00</div>
+                    </a>
+                </li>
+                        
+                <li>
+                    <a href="#popup-Intel-Core-i9-14900K">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu3.jpg" alt="Intel" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>Intel Core i9-14900K<br>Latest flagship (24C/32T, up to 6.0GHz, 36MB cache)</h2></div>
+                        <div class="gpu-price">RM4500.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-Intel-Core-i5-13600K">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu4.jpg" alt="Intel" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>Intel Core i5-13600K<br>Affordable gaming (14C/20T, up to 5.1GHz, 24MB cache)</h2></div>
+                        <div class="gpu-price">RM1400.00</div>
+                    </a>
+                </li>
+
+                <li data-badge="BEST REVIEW">
+                    <a href="#popup-Intel-Core-i5-13400F">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu5.jpg" alt="Intel" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>Intel Core i5-13400/F<br>Entry-level gaming (10C/16T, up to 4.6GHz, 20MB cache)</h2></div>
+                        <div class="gpu-price">RM950.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-Intel-Core-i7-13700K">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu12.jpg" alt="Intel" width="300" height="250"></div>
+                        <div class="gpu-content"><h2>Intel Core i7-13700K<br>High-performance hybrid CPU (16C/24T, up to 5.4GHz, 30MB cache, 125W TDP)</h2></div>
+                        <div class="gpu-price">RM2200.00</div>
+                    </a>
+                </li>
+
+                <li data-badge="BEST RATING">
+                    <a href="#popup-AMD-Ryzen-7-7800X3D">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu6.jpg" alt="AMD" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>AMD Ryzen 7 7800X3D<br>Budget gaming (8C/16T, up to 5.0GHz, 96MB 3D V-Cache)</h2></div>
+                        <div class="gpu-price">RM2100.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-AMD-Ryzen-9-7900X3D">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu7.jpg" alt="AMD" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>AMD Ryzen 9 7900X3D<br>High-end gaming (12C/24T, up to 5.6GHz, 128MB 3D V-Cache)</h2></div>
+                        <div class="gpu-price">RM3200.00</div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#popup-AMD-Ryzen-7-7700X">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu8.jpg" alt="AMD" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>AMD Ryzen 7 7700X<br>Zen 4 gaming (8C/16T, up to 5.4GHz, 32MB cache)</h2></div>
+                        <div class="gpu-price">RM1900.00</div>
+                    </a>
+                </li> 
+
+                <li>
+                    <a href="#popup-AMD-Ryzen-5-7600X">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu9.jpg" alt="AMD" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>AMD Ryzen 5 7600X<br>Budget Zen 4 (6C/12T, up to 5.3GHz, 32MB cache)</h2></div>
+                        <div class="gpu-price">RM1300.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-AMD-Ryzen-9-7950X">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu10.jpg" alt="AMD" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>AMD Ryzen 9 7950X<br>Zen 4 flagship (16C/32T, up to 5.7GHz, 64MB cache)</h2></div>
+                        <div class="gpu-price">RM3900.00</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#popup-AMD-Ryzen-5-7600">
+                        <div class="gpu-image-container"><img src="image-cpu/cpu11.jpg" alt="AMD" width="250" height="250"></div>
+                        <div class="gpu-content"><h2>AMD Ryzen 5 7600<br>Mid-range Zen 4 CPU (6C/12T, up to 5.1GHz, 32MB cache, 65W TDP)</h2></div>
+                        <div class="gpu-price">RM1100.00</div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <div id="popup-Intel-Core-i9-13900KS" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu1.png" alt="cpu1">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Intel Core i9-13900KS</h1>
+                <div class="product-model">13th Generation Intel® Core™ i9 Processors（LGA1700）</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM4200.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">Intel Core i9</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">24C / 32T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 6.06 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">36MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">150W (PL1) / 253W (PL2)</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div id="popup-Intel-Core-i3-13100F" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu2.jpg" alt="cpu2">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Intel Core i3-13100F</h1>
+                <div class="product-model">13th Generation Intel® Core™ i3 Processors（LGA1700）</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM550.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">Intel Core i3</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">4C / 8T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 4.56 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">12MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">60W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-Intel-Core-i9-14900K" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu3.jpg" alt="cpu3">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Intel Core i9-14900K</h1>
+                <div class="product-model">Intel® Core™ i9 Processors (14th gen)（LGA1700）</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM4500.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">Intel Core i9</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">24C / 32T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 6.06 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">36MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">125W (PL1) / 253W (PL2)</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-Intel-Core-i5-13600K" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu4.jpg" alt="cpu4">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Intel Core i5-13600K</h1>
+                <div class="product-model">13th Generation Intel® Core™ i5 Processors（LGA1700）</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM1400.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">Intel Core i5</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">14C (6P+8E) / 20T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.1 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">24MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">125W (PL1) / 181W (PL2)</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-Intel-Core-i5-13400F" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu5.jpg" alt="cpu5">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Intel Core i5-13400/F</h1>
+                <div class="product-model">13th Generation Intel® Core™ i5 Processors（LGA1700）</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM950.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">Intel Core i5 </span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">10C/16T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">up to 4.6GHz </span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">20MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">125W (PL1) / 181W (PL2)</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-Intel-Core-i7-13700K" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu12.jpg" alt="cpu12">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">Intel Core i7-13700K</h1>
+                <div class="product-model">13th Generation Intel® Core™ i7 Processors（LGA1700）</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM1950.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">Intel Core i7</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">16C/24T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.4 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">30MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">125W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-AMD-Ryzen-7-7800X3D" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu6.jpg" alt="cpu6">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">AMD Ryzen 7 7800X3D</h1>
+                <div class="product-model">Ryzen 7000 Series(AM5)</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM2100.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">AMD Ryzen 7</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">8C / 16T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.0 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">96MB 3D V-Cache</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">120W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-AMD-Ryzen-9-7900X3D" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu7.jpg" alt="cpu7">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">AMD Ryzen 9 7900X3D</h1>
+                <div class="product-model">Ryzen 7000 Series(AM5)</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM3200.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">AMD Ryzen 9</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">12C / 24T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.6 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">128MB 3D V-Cache</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">120W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-AMD-Ryzen-7-7700X" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu8.jpg" alt="cpu8">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">AMD Ryzen 7 7700X</h1>
+                <div class="product-model">Ryzen 7000 Series(AM5)</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM1900.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">AMD Ryzen 7</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">8C / 16T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.4 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value"> 32MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">105W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-AMD-Ryzen-5-7600X" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu9.jpg" alt="cpu9">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">AMD Ryzen 5 7600X</h1>
+                <div class="product-model">Ryzen 7000 Series(AM5)</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM1300.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">AMD Ryzen 5 </span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">6C / 12T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.3 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value"> 32MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">105W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-AMD-Ryzen-9-7950X" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu10.jpg" alt="cpu10">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">AMD Ryzen 9 7950X</h1>
+                <div class="product-model">Ryzen 7000 Series(AM5)</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM3900.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">AMD Ryzen 9</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">16C / 32T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.7 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">64MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">170W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="popup-AMD-Ryzen-5-7600" class="product-popup-overlay">
+        <div class="product-popup">
+            <a href="#" class="close-popup">&times;</a>
+            <div class="product-image-container">
+                <img src="image-cpu/cpu11.jpg" alt="cpu11">
+            </div>
+            <div class="product-details">
+                <h1 class="product-title">AMD Ryzen 5 7600</h1>
+                <div class="product-model">Ryzen 7000 Series(AM5)</div>
+                <div class="warranty">[2 Years Warranty]</div>
+                
+                <div class="price">RM1100.00</div>
+                <div class="info">
+                    <div class="shipping-notice">Shipping calculated at checkout.</div>
+                    <div class="availability in-stock">Availability: In Stock</div>
+                </div>
+                <div class="specs">
+                    <h3>Technical Specifications:</h3>
+                    <div class="spec-item">
+                        <span class="spec-name">PROCESSOR TYPE:</span>
+                        <span class="spec-value">AMD Ryzen 5</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CORES/THREADS:</span>
+                        <span class="spec-value">6C / 12T</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">MAX CLOCK SPEED:</span>
+                        <span class="spec-value">Up to 5.1 GHz</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">CACHE SIZE:</span>
+                        <span class="spec-value">32MB</span>
+                    </div>
+                    <div class="spec-item">
+                        <span class="spec-name">TDP:</span>
+                        <span class="spec-value">65W</span>
+                    </div>
+                </div>
+                
+                <div class="action-buttons">
+                    <div class="quantity-selector">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" class="qty-input">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                    <button class="add-to-cart">ADD TO CART</button>
+                    <button class="add-to-favorite">❤ ADD TO FAVORITES</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-sections">
+            <div class="footer-section">
+              <div class="footer-title">CUSTOMER CARE</div>
+              <ul class="footer-links">
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Warranty & Exchange</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <div class="footer-title">COMPANY</div>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <div class="footer-title">PAYMENT METHODS</div>
+              <div class="payment-methods">
+                <div class="payment-item">VISA</div>
+                <div class="payment-item">MASTERCARD</div>
+                <div class="payment-item">HONGLEONG BANK</div>
+                <div class="payment-item">HSBC BANK</div>
+                <div class="payment-item">RHB BANK</div>
+                <div class="payment-item">UOB BANK</div>
+                <div class="payment-item">PUBLIC BANK</div>
+                <div class="payment-item">FPX</div>
+                <div class="payment-item">GRAB PAY</div>
+                <div class="payment-item">TOUCH'NGO EWALLET</div>
+                <div class="payment-item">BANKISLAM</div>               
+              </div>
+            </div>
+          </div>
+          
+          <div class="copyright">
+            &copy; 2023 Nexus Components. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+    <script src="favorite.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Nexus Components</title>
+    <link rel="stylesheet" href="gpu-list.css">
+</head>
+<body>
+    <header>
+        <div class="logo-title-container">
+            <a href="index.html"><img src="comp-logo.jpg" alt="Company Logo" class="logo"></a>
+            <h1>Nexus Components</h1>
+        </div>
+        <div class="favorite-container">
+            <div class="favorite-icon" id="favorite-icon">
+                ♡
+                <span class="favorite-count">0</span>
+            </div>
+            <div class="favorite-dropdown" id="favorite-dropdown">
+                <div class="favorite-items-container">
+                    <h3>Your Favorites</h3>
+                    <div class="favorite-items-list" id="favorite-items-list">
+                        <p class="empty-favorite-message">Your favorites list is empty</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="cart-container">
+            <div class="cart-icon" id="cart-icon">
+                🛒
+                <span class="cart-count">0</span>
+            </div>
+            <div class="cart-dropdown" id="cart-dropdown">
+                <div class="cart-items-container">
+                    <h3>Your Cart</h3>
+                    <div class="cart-items-list" id="cart-items-list">
+                        <p class="empty-cart-message">Your cart is empty</p>
+                    </div>
+                    <div class="cart-total">
+                        <span>Total: RM</span>
+                        <span id="cart-total-price">0.00</span>
+                    </div>
+                    <button class="checkout-btn">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="checkout-container">
+        <div class="checkout-grid">
+            <div class="checkout-form">
+                <h2>Shipping Information</h2>
+                <form id="checkoutForm">
+                    <div class="form-group">
+                        <label for="fullName">Full Name</label>
+                        <input type="text" id="fullName" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Shipping Address</label>
+                        <textarea id="address" rows="3" required></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <input type="text" id="city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="postcode">Postcode</label>
+                        <input type="text" id="postcode" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="state">State</label>
+                        <select id="state" required>
+                            <option value="">Select State</option>
+                            <option value="johor">Johor</option>
+                            <option value="kedah">Kedah</option>
+                            <option value="kelantan">Kelantan</option>
+                            <option value="kl">Kuala Lumpur</option>
+                            <option value="melaka">Melaka</option>
+                            <option value="negeri-sembilan">Negeri Sembilan</option>
+                            <option value="pahang">Pahang</option>
+                            <option value="penang">Penang</option>
+                            <option value="perak">Perak</option>
+                            <option value="perlis">Perlis</option>
+                            <option value="sabah">Sabah</option>
+                            <option value="sarawak">Sarawak</option>
+                            <option value="selangor">Selangor</option>
+                            <option value="terengganu">Terengganu</option>
+                        </select>
+                    </div>
+                </form>
+                
+                <h2>Payment Method</h2>
+                <div class="payment-methods">
+                    <div class="payment-option">
+                        <input type="radio" id="creditCard" name="payment" checked>
+                        <label for="creditCard">Credit/Debit Card</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="bankTransfer" name="payment">
+                        <label for="bankTransfer">Bank Transfer</label>
+                    </div>
+                    <div class="payment-option">
+                        <input type="radio" id="ewallet" name="payment">
+                        <label for="ewallet">E-Wallet</label>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <div class="order-items" id="orderItems">
+                </div>
+                <div class="order-totals">
+                    <div class="total-row">
+                        <span>Subtotal</span>
+                        <span id="subtotal">RM0.00</span>
+                    </div>
+                    <div class="total-row">
+                        <span>Shipping</span>
+                        <span>RM10.00</span>
+                    </div>
+                    <div class="total-row grand-total">
+                        <span>Total</span>
+                        <span id="grandTotal">RM0.00</span>
+                    </div>
+                </div>
+                <button type="submit" form="checkoutForm" class="place-order-btn">Place Order</button>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="footer-container">
+          <div class="footer-sections">
+            <div class="footer-section">
+              <div class="footer-title">CUSTOMER CARE</div>
+              <ul class="footer-links">
+                <li><a href="#">Shipping Policy</a></li>
+                <li><a href="#">Warranty & Exchange</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <div class="footer-title">COMPANY</div>
+              <ul class="footer-links">
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+              </ul>
+            </div>
+            
+            <div class="footer-section">
+              <div class="footer-title">PAYMENT METHODS</div>
+              <div class="payment-methods">
+                <div class="payment-item">VISA</div>
+                <div class="payment-item">MASTERCARD</div>
+                <div class="payment-item">HONGLEONG BANK</div>
+                <div class="payment-item">HSBC BANK</div>
+                <div class="payment-item">RHB BANK</div>
+                <div class="payment-item">UOB BANK</div>
+                <div class="payment-item">PUBLIC BANK</div>
+                <div class="payment-item">FPX</div>
+                <div class="payment-item">GRAB PAY</div>
+                <div class="payment-item">TOUCH'NGO EWALLET</div>
+                <div class="payment-item">BANKISLAM</div>               
+              </div>
+            </div>
+          </div>
+          
+          <div class="copyright">
+            &copy; 2023 Nexus Components. All Rights Reserved.
+          </div>
+        </div>
+      </footer>
+
+    <script src="checkout.js"></script>
+    <script src="product-details.js"></script>
+</body>
+</html>
